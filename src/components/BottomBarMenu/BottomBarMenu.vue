@@ -1,31 +1,72 @@
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <template>
-    <div class="navbar">
-        <div class="notification d-flex align-items-center">
-            <div>
-                <section class="likes d-flex align-items-center mx-2 h6 justify-content-center" style="cursor: pointer;  border-radius: 100%; width: 40px;
-                height: 40px;">
-                    <i class="fa fa-heart" style="color: #4E40A1;"></i>
-                </section>
-                <section>
-                    <span>Salom</span>
-                </section>
-            </div>
-            <section class="shopping mx-2 d-flex align-items-center h6 justify-content-center" style="background-color: #DFDCF5; cursor: pointer;  border-radius: 100%; width: 40px;
-                height: 40px;">
-                <i class="fa-solid fa-cart-shopping" style="color: #4E40A1;"></i>
-            </section>
-            <section class="user-account mx-2 d-flex align-items-center h6 justify-content-center" style="background-color: #DFDCF5; cursor: pointer;  border-radius: 100%; width: 40px;
-                height: 40px;">
-                <i class="fa fa-user" style="color: #4E40A1;"></i>
-            </section>
-        </div>
-    </div>
+  <div class="navbar justify-content-between w-100">
+    <button class="active">
+      <div class="link fs-5">
+        <section>
+          <i class="fa text-center fs-4 fa-heart"></i>
+        </section>
+        <section>
+          <span>Asosiy</span>
+        </section>
+      </div>
+    </button>
+    <button class="active">
+      <div class="link fs-5">
+        <section>
+          <i class="fa text-center fs-4 fa-home"></i>
+        </section>
+        <section>
+          <span>Savat</span>
+        </section>
+      </div>
+    </button>
+    <button class="active">
+      <div class="link fs-5">
+        <section>
+          <i class="fa text-center fs-4 fa-cart-shopping"></i>
+        </section>
+        <section>
+          <span>Savat</span>
+        </section>
+      </div>
+    </button>
+    <button class="active">
+      <div class="link fs-5">
+        <section>
+          <i class="fa text-center fs-4 fa-user"></i>
+        </section>
+        <section>
+          <span>Kabinet</span>
+        </section>
+      </div>
+    </button>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.active {
+  opacity: 0.6;
+}
+.active span {
+  font-family: sans-serif;
+  font-size: 17px;
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.navbar {
+  padding: 20px;
+}
+.navbar .link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+</style>
