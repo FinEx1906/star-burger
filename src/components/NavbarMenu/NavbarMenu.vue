@@ -8,21 +8,12 @@ export default {};
       <div class="logo" style="pointer-events: none">
         <img src="/Brand.svg" alt="Brand" />
       </div>
-      <div
-        class="location d-flex align-items-center"
-        style="
-          background-color: #dfdcf5;
-          padding: 8px;
-          gap: 8px;
-          border-radius: 16px;
-        "
-      >
+      <div class="location d-flex align-items-center">
         <section class="icon">
           <img src="/icon/location.svg" alt="" />
         </section>
         <section class="text mx-1">
-          <span
-            style="color: #4e40a1; font-weight: 400; font-family: sans-serif"
+          <span style="color: #4e40a1; font-weight: 400"
             >Beruniy ko’chasi, 5</span
           >
         </section>
@@ -93,18 +84,53 @@ export default {};
 </template>
 
 <style scoped>
-
+.navbar .logo img {
+  max-width: 100%;
+}
+.navbar .location {
+  background-color: #dfdcf5;
+  padding: 8px;
+  gap: 8px;
+  border-radius: 16px;
+}
+@media (max-width: 425px) {
+  .navbar .logo {
+    width: 180px;
+  }
+  .navbar .location {
+    padding: 5px;
+  }
+  .navbar .location .icon img {
+    max-width: 100%;
+  }
+  .navbar .location .text span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 375px) {
+  .navbar .location {
+    padding: 5px;
+  }
+  .navbar .location .icon img {
+    width: 20px;
+  }
+  .navbar .location .text span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  .navbar .logo {
+    width: 160px;
+  }
+}
 @media (max-width: 768px) {
   .navbar {
     justify-content: space-between;
     padding: 10px;
-  } 
-  /* .navbar .notification{
-    display: none !important;
-  } */
+  }
 }
 @media (max-width: 650px) {
-  .navbar .notification{
+  .navbar .notification {
     display: none !important;
   }
 }

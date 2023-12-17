@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Electrolize&display=swap);
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,8 @@
 body {
   width: 100%;
   height: 100vh;
-  background-color: #FFF;
+  background-color: #fff;
+  font-family: "Electrolize", sans-serif;
 }
 
 html {
@@ -16,4 +19,11 @@ html {
 
 a {
   text-decoration: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
 }
