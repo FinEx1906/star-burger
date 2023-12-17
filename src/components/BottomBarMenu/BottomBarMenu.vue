@@ -94,8 +94,9 @@ button {
 .navbar {
   padding: 20px;
   box-shadow: 0 -3px 16px -13px black;
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  background-color: white;
 }
 .navbar .link {
   display: flex;

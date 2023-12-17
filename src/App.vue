@@ -2,35 +2,51 @@
 import NavbarMenu from "@/components/NavbarMenu/NavbarMenu.vue";
 import BottomBarMenu from "@/components/BottomBarMenu/BottomBarMenu.vue";
 import AdsSlide from "@/components/AdsSlider/AdsSlider.vue";
+import Card from "@/components/Cards/Card.vue";
 export default {
   components: {
     NavbarMenu,
     BottomBarMenu,
     AdsSlide,
+    Card,
   },
 };
 </script>
 
 <template>
-  <div class="container py-3">
-    <nav class="media-desktop">
+  <div>
+    <div class="container py-3">
+      <nav class="media-desktop">
+        <NavbarMenu />
+      </nav>
+      <div class="search">
+        <label for="search">
+          <i class="fa fa-search"></i>
+        </label>
+        <input type="search" placeholder="Mahsulotlarni izlang..." />
+      </div>
+    </div>
+    <nav class="media-phone">
       <NavbarMenu />
     </nav>
-    <div class="search">
-      <label for="search">
-        <i class="fa fa-search"></i>
-      </label>
-      <input type="search" placeholder="Mahsulotlarni izlang..." />
+    <div class="container">
+      <AdsSlide />
+      <div class="my-3">
+        <h1>Burger</h1>
+        <div class="row">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
     </div>
-  </div>
-  <nav class="media-phone">
-    <NavbarMenu />
-  </nav>
-  <div class="container">
-    <AdsSlide />
-  </div>
-  <div class="bottom--bar">
-    <BottomBarMenu />
+    <div class="bottom--bar">
+      <BottomBarMenu />
+    </div>
   </div>
 </template>
 
